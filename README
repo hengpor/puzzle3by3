@@ -1,0 +1,4 @@
+*This is 3 by 3 number puzzle game by hengpor.
+I am using greedy algorithm with manhathan distance to find the shortest path to targets.
+Checkout the source code to see how I use manhathan distance.
+

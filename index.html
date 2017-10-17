@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 x 3 Number Puzzle Game</title>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <style>
+        #board, #goal {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #aaa;
+            margin: 20px auto;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #board .cell, #goal .cellGoal {
+            width: 98px;
+            height: 98px;
+            background: #fff;
+            border: 1px solid #ccc;
+            float: left;
+            line-height: 98px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            position:relative;
+
+        }
+        #board .cell:hover {
+            background-color: rgb(221,221,221);
+        }
+
+        #tip {
+            border: 1px solid #ccc;
+            background: #eee;
+            width: 260px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            display: none;
+
+        }
+        .action-buttons {
+            width: 180px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper" class="container">
+        <h3 class="centered">Welcome to Eight Number Puzzle Game</h3>
+        <div class="row-fluid">
+            <div class="span6">
+                <div id="board"></div>
+                <div id="status" class="alert">
+                      <div id="alertText"></div>
+                </div>
+                <div class="action-buttons">
+                      <button type="button" id="restart" class="btn btn-warning">Restart</button>
+                      <button type="button" id="help" class="btn btn-info">Ask for help</button>
+                </div>
+                <div id="tip">
+
+                </div>
+            </div>
+            <div class="span6">
+                <div id="goal"></div>
+                <h3 class="text-centered">Goal</h3>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
